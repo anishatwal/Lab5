@@ -122,6 +122,7 @@ volGroup.addEventListener('input', () => {
 });
 
 function populateVoices() {
+  voices = synthesis.getVoices();
   for (var i = 0; i < voices.length ; i++) {
     var option = document.createElement('option');
     option.textContent = voices[i].name + ' (' + voices[i].lang + ')';
