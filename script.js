@@ -133,6 +133,7 @@ function populateVoices() {
     option.setAttribute('data-name', voices[i].name);
     voiceSelect.appendChild(option);
   }
+  voiceSelect.removeChild(document.querySelector('option[value=none]'));
 }
 
 /**
