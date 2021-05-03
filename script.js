@@ -58,10 +58,13 @@ form.addEventListener('submit', (event) => {
   let bottom = bottomText.value;
   // add relevant text to canvas
   context.fillStyle = 'white';
-  context.font = '48px Helvetica';
   context.textAlign = 'center';
+  context.font = '48px Helvetica';
   context.fillText(top, canvas.width / 2, canvas.height * 0.10);
   context.fillText(bottom, canvas.width / 2, canvas.height * 0.96);
+  context.strokeStyle = "black";
+  context.strokeText(top, canvas.width / 2, canvas.height * 0.10);
+  context.strokeText(bottom, canvas.width / 2, canvas.height * 0.96);
   // toggle relevant buttons
   generate.disabled = true;
   clear.disabled = false;
