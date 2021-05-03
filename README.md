@@ -9,4 +9,4 @@ https://anishatwal.github.io/Lab5/
 
 ## Part 2:
 
-LINK TO YOUR PART 2 REPOSITORY
+https://github.com/anishatwal/github-actions-for-ci/issues/7 
